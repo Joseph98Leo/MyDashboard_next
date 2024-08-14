@@ -1,1 +1,0 @@
-export { Siderbar } from './Siderbar'

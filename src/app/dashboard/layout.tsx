@@ -1,4 +1,5 @@
-import { Siderbar } from "../components"
+import { Providers } from "@/store/Providers";
+import { Siderbar } from "../../components"
 
 
 
@@ -10,8 +11,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
                 <Siderbar />
 
-                <div className="p-2 w-full text-slate-900">
-                    { children }
+                <div className="w-full text-slate-900">
+                    <Providers>
+                        { children }
+                    </Providers>
                 </div>
 
 
